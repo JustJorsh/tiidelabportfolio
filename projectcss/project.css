@@ -261,13 +261,13 @@
   list-style: none;
   padding: 20px 65px 80px 65px;
   float: left;
-  width: 150px;
+  width: 100px;
   height: 250px;
   margin: 20px;
 }
 
 .clients ul li img {
-  width: 150px;
+  width: 100px;
   height: 150px;
 }
 .bodyThirdLevel {
@@ -299,7 +299,7 @@
   float: left;
 }
 .work ul li img {
-  width: 215px;
+  width: 180px;
   height: 200px;
 }
 .aboutBody {
@@ -337,19 +337,19 @@
   padding-left: 30px;
 }
 .one {
-  width: 32%;
-  height: auto;
+  width: 30%;
+  height: 700px;
   padding: 20px;
   float: left;
   padding-left: 10px;
   margin: 10px;
 }
 .oneImg {
-  width: 100%;
+  width: 90%;
   height: 390px;
 }
 .oneImg img {
-  width: 100%;
+  width: 95%;
   height: 370px;
 }
 .one h3 {
