@@ -100,6 +100,18 @@ section {
   line-height: 3rem;
   margin: 1rem;
   padding-left: 2rem;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 30px #271150, 0 0 40px #271150;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #7549c5, 0 0 40px #7549c5,
+      0 0 50px #7549c5;
+  }
 }
 
 .headerSecondLevel p {
