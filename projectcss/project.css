@@ -7,7 +7,11 @@
 body {
   font-size: 12px;
   font-family: cursive;
-  background-color: rgb(232, 235, 248);
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+section {
+  margin: 8rem 0rem 0rem;
 }
 
 .header {
@@ -111,6 +115,32 @@ body {
   padding-left: 2rem;
 }
 
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 0rem 5rem;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
 .headerSecondLevel ul li {
   list-style: none;
   padding: 0.5rem;
@@ -152,17 +182,29 @@ body {
   font-weight: lighter;
 }
 
+.introoduceAbout a {
+  text-decoration: none;
+  color: black;
+}
+
 .bodyFirstLeftImg {
   width: 20rem;
-  height: 70vh;
+  height: 65vh;
   padding: 2rem;
   text-align: center;
   border-radius: 2rem;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.bodyFirstLeftImg :hover {
+  width: 30rem;
+  height: 90vh;
+  transform: rotate(360deg);
 }
 
 .bodyFirstLeftImg img {
   width: 20rem;
-  height: 70vh;
+  height: 60vh;
   border-radius: 2rem;
 
   /* padding: 2rem; */
@@ -233,11 +275,18 @@ body {
   padding: 1rem;
   height: 10rem;
   margin-bottom: 2.5rem;
+  transition: width 2s, height 2s, transform 2s;
 }
 
 .work ul li img {
   width: 10rem;
   height: 10rem;
+}
+
+.work ul li :hover {
+  width: 20rem;
+  height: 20rem;
+  transform: rotate(360deg);
 }
 
 .foot {
@@ -268,7 +317,7 @@ body {
 
 .footerSupport ul li a {
   text-decoration: none;
-  color: rgb(65, 63, 63);
+  color: rgb(252, 238, 238);
   font-size: 1rem;
 }
 
@@ -281,6 +330,7 @@ body {
 }
 
 .footerSecondLevel {
+  margin: 3rem 0rem 1rem 0rem;
   text-align: left;
 }
 
@@ -320,7 +370,7 @@ body {
 
 .aboutText p {
   font-size: 1.5rem;
-  color: gray;
+  color: rgb(248, 244, 244);
   padding: 0.5rem;
   font-weight: lighter;
 }
@@ -354,7 +404,7 @@ body {
 .aboutList ul li a {
   font-size: 1.2rem;
   line-height: 2rem;
-  color: black;
+  color: rgb(247, 244, 244);
   text-decoration: none;
   padding: 1rem;
   /* padding-left: 10px; */
@@ -388,7 +438,7 @@ body {
 .one p {
   font-size: 1rem;
   font-weight: 300;
-  color: #aaa;
+  color: rgb(247, 244, 244);
   padding-bottom: 15px;
   line-height: 25px;
   letter-spacing: 1px;
@@ -409,7 +459,7 @@ body {
 }
 
 .contactLeft {
-  width: 100rem;
+  width: 90vw;
   height: auto;
   float: left;
   padding: 1rem;
@@ -430,7 +480,7 @@ body {
   border-bottom: 1px solid black;
   padding: 0px;
   font-size: 1rem;
-  background-color: rgb(232, 235, 248);
+  background-color: grey;
 }
 .contactLeft ul li textarea {
   width: 95%;
@@ -439,7 +489,7 @@ body {
   border-bottom: 1px solid black;
   padding: 0.5rem;
   font-size: 1rem;
-  background-color: rgb(232, 235, 248);
+  background-color: grey;
 }
 .contactLeft ul li input.formbtn {
   color: rgb(232, 235, 248);
@@ -460,10 +510,10 @@ body {
 .contactRight p {
   font-size: 1rem;
 
-  color: #aaa;
+  color: rgb(245, 239, 239);
   font-weight: 300;
   line-height: 2rem;
-  padding-bottom: 3re;
+  padding-bottom: 3rem;
 }
 .findUs {
   width: 90%;
@@ -476,7 +526,7 @@ body {
 .stickyimg {
   position: fixed;
   bottom: 5rem;
-  right: 5rem;
+  right: 2rem;
   width: 2rem;
   height: 2rem;
 }
@@ -486,6 +536,105 @@ body {
 }
 .stickyimg a {
   text-decoration: none;
+}
+
+.masonry {
+  transition: all 0.5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+  column-count: 3;
+}
+
+/* Masonry item */
+.masonry .brick {
+  margin-bottom: 30px;
+  display: inline-block; /* Fix the misalignment of items */
+  vertical-align: top; /* Keep the item on the very top */
+}
+
+/* Masonry image effects */
+.masonry .brick img {
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.masonry .brick:hover img {
+  opacity: 0.75;
+}
+
+.hambug {
+  text-align: right;
+  position: fixed;
+}
+
+.hambug p {
+  text-align: right;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #f7f5f5;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+  gap: 10px;
+}
+
+.landscape {
+  grid-column-end: span 2;
 }
 
 [class*="col-"] {
@@ -511,12 +660,33 @@ body {
   .projAbo {
     flex-flow: column;
   }
+  .contact {
+    flex-flow: column;
+  }
+  .rightHeader {
+    display: none;
+  }
+
+  .hambug {
+    display: block;
+  }
+  .masonry {
+    column-count: 1;
+  }
 }
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   /* .introoduceAbout h5 {
     font-size: 1.5rem;
   } */
+
+  .rightHeader {
+    display: none;
+  }
+
+  .hambug {
+    display: block;
+  }
   .col-s-1 {
     width: 8.33%;
   }
@@ -556,6 +726,13 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .rightHeader {
+    display: block;
+  }
+
+  .hambug {
+    display: none;
+  }
   /* For desktop: */
   .col-1 {
     width: 8.33%;
@@ -592,5 +769,36 @@ body {
   }
   .col-12 {
     width: 100%;
+  }
+
+  .flip-box {
+    background-color: transparent;
+    /* width: 300px;
+    height: 200px; */
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+  }
+
+  .flip-box-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%; */
+    backface-visibility: hidden;
+  }
+
+  .flip-box-back {
+    /* background-color: dodgerblue; */
+    /* color: white; */
+    transform: rotateY(180deg);
   }
 }

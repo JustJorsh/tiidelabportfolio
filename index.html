@@ -23,17 +23,40 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Me</a></li>
-              <li><a href="project.html">Projects</a></li>
+              <li><a href="project.html">Team Gallery</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Me</a>
+              <a href="project.html">Team Gallery</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="col-3 hambug">
+            <p style="cursor: pointer" onclick="openNav()">&#9776;</p>
+          </div>
           <div class="row">
             <div class="headerSecondLevel col-6">
-              <p>-Hello world</p>
-              <h5>
-                I am Joshua Adetunbi, a mobile application & frontend developer
-                based in Nigeria.
-              </h5>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <p>-Hello world</p>
+                    <h5>
+                      I am Joshua Adetunbi, a mobile application & frontend
+                      developer based in Nigeria.
+                    </h5>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2></h2>
+                  </div>
+                </div>
+              </div>
 
               <ul>
                 <li><input type="button" value="Get Started" /></li>
@@ -52,11 +75,15 @@
             <h5>
               A highly focused software developer with experience in a variety
               of programming and engineering opportunities and experience in
-              IT-oriented customer support. Organised, methodical and a keen eye
-              for detail results in solid coding and trustworthy software
-              programs. Understanding project requirements and communicating the
-              progress of projects across team members.
+              IT-oriented customer support.
             </h5>
+            <button class="button button5">
+              <a
+                href="https://drive.google.com/file/d/1fanv4IPrf6spx9mueKLMZLDjpIbLuj7_/view?usp=sharing"
+                target="_blank"
+                >Download CV</a
+              >
+            </button>
           </div>
           <div class="bodyFirstLeftImg col-6">
             <img src="images/pp.JPG" />
@@ -121,12 +148,21 @@
           </li>
           <li><a href="https://www.Twitter.com/">Twitter</a></li>
           <li><a href="https://www.Facebook.com/">Facebook</a></li>
-          <li><a href="https://github.com/JustJorsh">Facebook</a></li>
+          <li><a href="https://github.com/JustJorsh">github</a></li>
         </ul>
       </div>
       <div class="footerSecondLevel">
         <p>&copy; 2020 Justjorsh. All Rights Reserved</p>
       </div>
     </footer>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "80%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
   </body>
 </html>
