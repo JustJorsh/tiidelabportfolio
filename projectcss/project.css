@@ -100,7 +100,7 @@ section {
   line-height: 3rem;
   margin: 1rem;
   padding-left: 2rem;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
