@@ -8,7 +8,8 @@ body {
   font-size: 12px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: rgba(0, 0, 0, 0.712);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 section {
@@ -105,18 +106,18 @@ section {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 30px #271150, 0 0 40px #271150;
+    text-shadow: 0 0 10px #fff, 0 0 30px #10a74a, 0 0 40px #10a74a;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #7549c5, 0 0 40px #7549c5,
-      0 0 50px #7549c5;
+    text-shadow: 0 0 20px #fff, 0 0 30px #5ae99a, 0 0 40px #5ae99a,
+      0 0 50px #5ae99a;
   }
 }
 
 .headerSecondLevel p {
   font-size: 1rem;
-  color: rgb(37, 192, 102);
+  color: rgb(29, 248, 120);
   text-align: left;
   margin: 1rem;
   margin-bottom: 0rem;
@@ -186,6 +187,7 @@ section {
 .bodyFirstLevel h4 {
   text-align: center;
   font-size: 2rem;
+  color: rgb(29, 248, 120);
 }
 
 .introoduceAbout h5 {
@@ -197,7 +199,7 @@ section {
 
 .introoduceAbout a {
   text-decoration: none;
-  color: black;
+  color: rgb(233, 57, 57);
 }
 
 .bodyFirstLeftImg {
@@ -231,6 +233,7 @@ section {
 .bodySecondLevel h2 {
   text-align: center;
   font-size: 1.5rem;
+  color: rgb(29, 248, 120);
 }
 .clients ul {
   width: 90vw;
@@ -270,6 +273,7 @@ section {
 .bodyThirdLevel h2 {
   text-align: center;
   font-size: 1.5rem;
+  color: rgb(29, 248, 120);
 }
 
 .work {
@@ -280,6 +284,7 @@ section {
 .work h3 {
   text-align: center;
   font-size: 0.6rem;
+  color: rgb(233, 57, 57);
   /* margin-top: 0.3rem;
   margin-bottom: 0rem; */
 }
@@ -343,8 +348,10 @@ section {
 }
 
 .footerSecondLevel {
+  color: rgb(29, 248, 120);
   margin: 3rem 0rem 1rem 0rem;
   text-align: left;
+  font-size: 1rem;
 }
 
 .aboutBody11 {
@@ -365,6 +372,7 @@ section {
   text-align: center;
   font-size: 2rem;
   margin: 1rem 0rem;
+  color: rgb(29, 248, 120);
 }
 
 .aboutAbout h4 {
@@ -372,11 +380,12 @@ section {
   font-size: 2rem;
   margin: 5rem 0rem;
   margin-bottom: 2rem;
+  color: rgb(29, 248, 120);
 }
 
 .aboutText h5 {
   font-size: 2rem;
-  color: black;
+  color: rgb(29, 248, 120);
   padding: 1.5rem;
   font-weight: lighter;
 }
@@ -412,6 +421,11 @@ section {
   align-items: center;
   height: auto;
   width: 100%;
+  /* padding: 2rem; */
+}
+
+.aboutList ul li {
+  padding: 2rem;
 }
 
 .aboutList ul li a {
@@ -419,7 +433,6 @@ section {
   line-height: 2rem;
   color: rgb(247, 244, 244);
   text-decoration: none;
-  padding: 1rem;
   /* padding-left: 10px; */
 }
 
@@ -445,7 +458,7 @@ section {
 .one h3 {
   font-size: 1.5rem;
   font-weight: 200;
-  color: black;
+  color: rgb(29, 248, 120);
   padding-bottom: 1rem;
 }
 .one p {
@@ -458,7 +471,7 @@ section {
 }
 .one input {
   color: white;
-  background: #337ab7;
+  background: rgb(233, 57, 57);
   border: 1px solid #337ab7;
   padding: 1rem;
   font-size: 1rem;
@@ -515,7 +528,7 @@ section {
 }
 
 .contactRight h5 {
-  color: #42a5f6;
+  color: rgb(233, 57, 57);
   font-size: 1rem;
 
   font-weight: 300;
